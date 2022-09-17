@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="WpfApp1.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.MVVM.View" 
+             xmlns:viewModel="clr-namespace:WpfApp1.MVVM.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="505" d:DesignWidth="900">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" VerticalAlignment="Center">
+            <Button Template="{StaticResource NeonButton}" Width="120" Height="120" BorderBrush="#4dc247" BorderThickness="5" FontSize="45" Background="#272537" Foreground="#4dc247"  Command="{Binding BookViewCommand}"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="1" VerticalAlignment="Center">
+            <Button Template="{StaticResource NeonButton}" Width="120" Height="120" BorderBrush="#d42a1e" BorderThickness="5" FontSize="45" Background="#272537" Foreground="#d42a1e" Command="{Binding LinkViewCommand}"></Button>
+        </StackPanel>
+        <StackPanel Grid.Column="2" VerticalAlignment="Center">
+            <Button Template="{StaticResource NeonButton}" Width="120" Height="120" BorderBrush="#524cf5" BorderThickness="5" FontSize="45" Background="#272537" Foreground="#524cf5" Command="{Binding SaveLoadViewCommand}"></Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

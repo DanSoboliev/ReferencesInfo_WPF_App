@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Common.Context.LineIndents.LineIndent">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAABAAAAAACAAABAgAAAAAAAIAAgAABAAAA=</HashCode>
+      <FileName>LineIndents\LineIndent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.LineIndents.SimpleLineIndent">
+    <Position X="0.5" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ABAAEAAAAAABAAAAAAAAAAAAAAAAAAAAAgAgAABAAAA=</HashCode>
+      <FileName>LineIndents\SimpleLineIndent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.Extensions.ObjectMethods">
+    <Position X="7.25" Y="17.25" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\ObjectMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.StringFormatters.StringFormatter">
+    <Position X="4" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAACAAAACgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StringFormatters\StringFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.StringFormatters.SimpleStringFormatter">
+    <Position X="4" Y="3.25" Width="5.5" />
+    <InheritanceLine Type="Common.Context.StringFormatters.StringFormatter" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.938" Y="2.891" />
+        <Point X="5.938" Y="3.058" />
+        <Point X="5.938" Y="3.058" />
+        <Point X="5.938" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAACAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>StringFormatters\SimpleStringFormatter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.Extensions.StringMethods">
+    <Position X="4" Y="6.25" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\StringMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Common.Context.Extensions.EnumerableMethods">
+    <Position X="4" Y="5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\EnumerableMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="WpfApp1.MVVM.View.BookFiltrSortView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                <TextBlock Foreground="White" FontSize="20">Фільтрування</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                <CheckBox IsChecked="{Binding Check1, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>Id книги в межах</TextBlock>
+                <TextBlock Text=" від"/>
+                <TextBox Text="{Binding ValueId1}" Style="{StaticResource ModernTextBox2}" Width="50" VerticalAlignment="Center"></TextBox>
+                <TextBlock Text="до"/>
+                <TextBox Text="{Binding ValueId2}" Style="{StaticResource ModernTextBox2}" Width="50" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2">
+                <CheckBox IsChecked="{Binding Check2, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>назва починається з</TextBlock>
+                <TextBox Text="{Binding NameStart}" Style="{StaticResource ModernTextBox2}"  Width="114" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="3">
+                <CheckBox IsChecked="{Binding Check3, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>назва містить</TextBlock>
+                <TextBox Text="{Binding NameContain}" Style="{StaticResource ModernTextBox2}"  Width="114" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="4">
+                <CheckBox IsChecked="{Binding Check4, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>рік видання в межах</TextBlock>
+                <TextBlock Text=" від"/>
+                <TextBox Text="{Binding ValueYear1}" Style="{StaticResource ModernTextBox2}"  Width="50" VerticalAlignment="Center"></TextBox>
+                <TextBlock Text="до"/>
+                <TextBox Text="{Binding ValueYear2}" Style="{StaticResource ModernTextBox2}"  Width="50" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="5">
+                <CheckBox IsChecked="{Binding Check5, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>кількість сторінок в межах</TextBlock>
+                <TextBlock Text=" від"/>
+                <TextBox Text="{Binding ValuePage1}" Style="{StaticResource ModernTextBox2}"  Width="50" VerticalAlignment="Center"></TextBox>
+                <TextBlock Text="до"/>
+                <TextBox Text="{Binding ValuePage2}" Style="{StaticResource ModernTextBox2}"  Width="50" VerticalAlignment="Center"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="6">
+                <CheckBox IsChecked="{Binding CheckIllustration, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>наявність ілюстрацій вказана</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="7">
+                <CheckBox IsChecked="{Binding CheckContent, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>зміст вказаний</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="8">
+                <CheckBox IsChecked="{Binding CheckDescription, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Style="{StaticResource CheckBoxStyle}" Margin="0 0 20 0"/>
+                <TextBlock>опис вказаний</TextBlock>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                <TextBlock Foreground="White" FontSize="20">Сортування</TextBlock>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                <RadioButton GroupName="sort" IsChecked="{Binding Check6, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="За Id" Style="{StaticResource RadioButtonStyle}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                <RadioButton GroupName="sort" IsChecked="{Binding Check7, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="За назвою" Style="{StaticResource RadioButtonStyle}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="1">
+                <RadioButton GroupName="sort" IsChecked="{Binding Check8, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="За роком видання" Style="{StaticResource RadioButtonStyle}"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Grid.Row="4" Grid.Column="1">
+                <RadioButton GroupName="sort" IsChecked="{Binding Check9, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Content="За кількістю сторінок" Style="{StaticResource RadioButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Command="{Binding ApplyCommand}" Template="{StaticResource MenuControlButton}" Foreground="White">Застосувати</Button>
+            <Button Command="{Binding Exit}" Template="{StaticResource MenuControlButton}" Foreground="White">Назад</Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

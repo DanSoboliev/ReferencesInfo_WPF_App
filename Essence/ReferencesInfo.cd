@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ReferencesInfo.Entities.Book">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AYALAAAAAgEgAEQFIAAABCQAAAAEAAgAAAKAAAEAAAA=</HashCode>
+      <FileName>Entities\Book.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ReferencesInfo.Entities.Link">
+    <Position X="4.5" Y="3.25" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>IQCIAAAAgAAQAERgAAAAQAAAAAAAAAAAAACAACEAgAA=</HashCode>
+      <FileName>Entities\Link.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="book" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Common.Entities.Entity">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ReferencesInfo.Data.DataSet">
+    <Position X="1.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Data\DataSet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Books" />
+      <Property Name="Links" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.Data.DataContext">
+    <Position X="0.5" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>QCAAgJAAAAAQAAIkAAAAAAAAiAAAAIAACEAAAABAAAI=</HashCode>
+      <FileName>Data\DataContext.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataSet" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Common.Extensions.EnumerableMethods">
+    <Position X="4" Y="8.25" Width="4.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ReferencesInfo.IO.BinarySerializationController">
+    <Position X="4" Y="10" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IO\BinarySerializationController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ReferencesInfo.IO.XmlFileIoController">
+    <Position X="4" Y="11.75" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIEAAAAAAAAAAAAAAAAAAAAgACAAAAGAAQAAAAA=</HashCode>
+      <FileName>IO\XmlFileIoController.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

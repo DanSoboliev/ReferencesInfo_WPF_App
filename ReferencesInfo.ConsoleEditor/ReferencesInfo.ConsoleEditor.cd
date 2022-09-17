@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="ReferencesInfo.Data.DataContext">
+    <Position X="4.25" Y="3" Width="2" />
+    <AssociationLine Name="Books" Type="ReferencesInfo.Entities.Book" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.625" Y="3" />
+        <Point X="4.625" Y="2.25" />
+        <Point X="2.5" Y="2.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsCollectionAssociation>
+      <Property Name="Books" />
+      <Property Name="Links" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.Entities.Book">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ReferencesInfo.Entities.Link">
+    <Position X="0.5" Y="6.25" Width="2" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Book" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.ConsoleUI.MainManager">
+    <Position X="8.25" Y="0.5" Width="2.25" />
+    <AssociationLine Name="linksEditor" Type="ReferencesInfo.ConsoleEditor.Editors.LinksEditor" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.5" Y="2.898" />
+        <Point X="10.875" Y="2.898" />
+        <Point X="10.875" Y="5.625" />
+        <Point X="11.385" Y="5.625" Type="JumpStart" />
+        <Point X="11.552" Y="5.625" Type="JumpEnd" />
+        <Point X="12.312" Y="5.625" />
+        <Point X="12.312" Y="6" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>wREAgJgAAAAAABAAAAAAAAQAAgAAAQEQAAAAKIBAAAA=</HashCode>
+      <FileName>ConsoleUI\MainManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="booksEditor" />
+      <Field Name="linksEditor" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.ConsoleUI.CommandManager">
+    <Position X="11.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAgAAAAAAAAAAAAAIAAAAAAAgAAAQAAAAAAAQgAI=</HashCode>
+      <FileName>ConsoleUI\CommandManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="commandsInfo" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.Editors.BooksEditor">
+    <Position X="7" Y="5.75" Width="3.5" />
+    <InheritanceLine Type="ReferencesInfo.ConsoleEditor.ConsoleUI.CommandManager" FixedToPoint="true">
+      <Path>
+        <Point X="13" Y="3.209" />
+        <Point X="13" Y="5.375" />
+        <Point X="10.958" Y="5.375" Type="JumpStart" />
+        <Point X="10.792" Y="5.375" Type="JumpEnd" />
+        <Point X="9.938" Y="5.375" />
+        <Point X="9.938" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="dataContext" Type="ReferencesInfo.Data.DataContext" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.5" Y="5.75" />
+        <Point X="7.5" Y="4.875" />
+        <Point X="6.25" Y="4.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AQMCAAgGAAgAIAAAAEABRAIUAACAAAASAAAAAIBAIAA=</HashCode>
+      <FileName>Editors\BooksEditor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="booksFiltrationController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.Editors.LinksEditor">
+    <Position X="11.25" Y="6" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AwMAQBgACAAAIQAACEAERBIQAACAAAASAAgAAIBAKIA=</HashCode>
+      <FileName>Editors\LinksEditor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="linksFiltrationController" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.Program">
+    <Position X="5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAQgAAAAAAAAAAAAAAAAAAAAAAABIAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dataContext" />
+      <Field Name="mainManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.Controllers.BooksFiltrationController">
+    <Position X="2.75" Y="9.5" Width="3" />
+    <NestedTypes>
+      <Delegate Name="ReferencesInfo.ConsoleEditor.Controllers.BooksFiltrationController.Filter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\BooksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="ReferencesInfo.ConsoleEditor.Controllers.BooksFiltrationController.FilterId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\BooksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ReferencesInfo.ConsoleEditor.Controllers.BooksFiltrationController.FilerCommandInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\BooksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QACAIQgAAAAABQFIIAIYQAKABgAALAAAEkAAAEAAQAQ=</HashCode>
+      <FileName>Controllers\BooksFiltrationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReferencesInfo.ConsoleEditor.Controllers.LinksFiltrationController">
+    <Position X="16.75" Y="3.75" Width="3.25" />
+    <NestedTypes>
+      <Delegate Name="ReferencesInfo.ConsoleEditor.Controllers.LinksFiltrationController.Filter" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\LinksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="ReferencesInfo.ConsoleEditor.Controllers.LinksFiltrationController.FilterId" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\LinksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="ReferencesInfo.ConsoleEditor.Controllers.LinksFiltrationController.FilerCommandInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Controllers\LinksFiltrationController.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QADAAQgQAAAAAAFYAYIYQAKABAAADAACEgAAQEAAQCQ=</HashCode>
+      <FileName>Controllers\LinksFiltrationController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ReferencesInfo.ConsoleEditor.ConsoleUI.CommandInfo">
+    <Position X="16.75" Y="1.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConsoleUI\CommandInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="command" />
+    </ShowAsAssociation>
+  </Struct>
+  <Delegate Name="ReferencesInfo.ConsoleEditor.ConsoleUI.Command" Collapsed="true">
+    <Position X="15" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ConsoleUI\CommandInfo.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
